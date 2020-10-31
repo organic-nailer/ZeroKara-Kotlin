@@ -20,3 +20,5 @@ operator fun Number.times(other: INDArray): INDArray = other.mul(this)
 operator fun Number.div(other: INDArray): INDArray = Transforms.pow(other, -1) * this
 
 operator fun INDArray.unaryMinus(): INDArray = this.neg()
+
+infix fun INDArray.dot(other: INDArray): INDArray = this.mmul(other)
