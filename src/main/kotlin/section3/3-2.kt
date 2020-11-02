@@ -101,9 +101,7 @@ private fun step(x: Double): Int {
 }
 
 private fun stepND(x: INDArray): INDArray {
-    val res = x.dup()
-    BooleanIndexing.applyWhere(res, Conditions.greaterThan(0),{ 1 }, { 0 })
-    return res
+    return x.gt(0)
 }
 
 private fun sigmoidND(x: INDArray): INDArray {

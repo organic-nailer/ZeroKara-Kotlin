@@ -47,7 +47,7 @@ private fun section1_6_2() {
     val data = mapOf<String, Any>(
             "x" to xArray.data().asDouble() + xArray.data().asDouble(),
             "y" to sinArray.data().asDouble() + cosArray.data().asDouble(),
-            "s" to List(xArray.size(1)) { "sin" } + List(xArray.size(1)) { "cos" }
+            "s" to List(xArray.size(1).toInt()) { "sin" } + List(xArray.size(1).toInt()) { "cos" }
     )
 
     // Create plot specs using Lets-Plot Kotlin API

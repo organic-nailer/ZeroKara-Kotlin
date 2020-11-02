@@ -35,7 +35,7 @@ fun letsPlot() {
     val data = mapOf<String, Any>(
             "x" to xArray.data().asDouble() + xArray.data().asDouble(),
             "y" to yArray.data().asDouble() + (yArray * 0.5).data().asDouble(),
-            "s" to List(xArray.size(1)) { "A" } + List(xArray.size(1)) { "B" }
+            "s" to List(xArray.size(1).toInt()) { "A" } + List(xArray.size(1).toInt()) { "B" }
     )
 
     // Create plot specs using Lets-Plot Kotlin API

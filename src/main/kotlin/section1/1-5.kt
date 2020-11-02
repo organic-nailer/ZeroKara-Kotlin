@@ -1,7 +1,6 @@
 package section1
 
 import org.nd4j.linalg.api.ndarray.INDArray
-import org.nd4j.linalg.api.ops.impl.shape.Broadcast
 import org.nd4j.linalg.factory.Nd4j
 import org.nd4j.linalg.indexing.BooleanIndexing
 
@@ -77,7 +76,7 @@ private fun section1_5_6() {
     println("$X")
     println("${X.getRow(0)}")
     println("${X.getDouble(0,1)}")
-    for(i in 0 until X.rows()) {
+    for(i in 0 until X.rows().toLong()) {
         println("${X.getRow(i)}")
     }
     val X2 = X.reshape(1, X.length())
