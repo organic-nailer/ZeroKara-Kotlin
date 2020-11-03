@@ -1,7 +1,7 @@
 package section2
 
-import org.nd4j.linalg.api.ndarray.INDArray
 import org.nd4j.linalg.factory.Nd4j
+import util.*
 
 fun main(args: Array<String>) {
     println("${xor(0,0)}")

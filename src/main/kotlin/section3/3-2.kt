@@ -7,9 +7,6 @@ import jetbrains.letsPlot.intern.toSpec
 import jetbrains.letsPlot.label.ggtitle
 import org.nd4j.linalg.api.ndarray.INDArray
 import org.nd4j.linalg.factory.Nd4j
-import org.nd4j.linalg.indexing.BooleanIndexing
-import org.nd4j.linalg.indexing.conditions.Condition
-import org.nd4j.linalg.indexing.conditions.Conditions
 import org.nd4j.linalg.ops.transforms.Transforms
 import util.*
 

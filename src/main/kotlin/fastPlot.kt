@@ -7,7 +7,6 @@ import jetbrains.letsPlot.geom.geom_image
 import jetbrains.letsPlot.ggplot
 import jetbrains.letsPlot.intern.toSpec
 import jetbrains.letsPlot.label.ggtitle
-import java.awt.Font
 import java.io.File
 import javax.imageio.ImageIO
 import javax.swing.JFrame

@@ -2,17 +2,7 @@ package section1
 
 import org.nd4j.linalg.api.ndarray.INDArray
 import org.nd4j.linalg.factory.Nd4j
-import org.nd4j.linalg.indexing.BooleanIndexing
-
-operator fun INDArray.plus(other: INDArray): INDArray = this.add(other)
-operator fun INDArray.minus(other: INDArray): INDArray = this.sub(other)
-operator fun INDArray.times(other: INDArray): INDArray = this.mul(other)
-operator fun INDArray.div(other: INDArray): INDArray = this.div(other)
-
-operator fun INDArray.plus(other: Number): INDArray = this.add(other)
-operator fun INDArray.minus(other: Number): INDArray = this.sub(other)
-operator fun INDArray.times(other: Number): INDArray = this.mul(other)
-operator fun INDArray.div(other: Number): INDArray = this.div(other)
+import util.*
 
 fun main(args: Array<String>) {
     section1_5_2()
